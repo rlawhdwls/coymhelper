@@ -1,0 +1,267 @@
+@font-face {
+    font-family: 'HoengseongHanu';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/HoengseongHanu.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "HoengseongHanu";
+    /* border: 3px solid rgba(140, 0, 255, 0.5); */
+    color: black;
+    box-sizing: border-box;
+    resize: none;
+}
+
+/* 1rem=10px */
+html {
+    font-size: 62.5%;
+}
+
+
+/* ////////////////////////////////////////////////// */
+/* 헤더부분 */
+header {
+    width: 100%;
+    position: fixed;
+    height: 10rem;
+    top: 0%;
+    background-color: rgb(255, 255, 255, 1);
+    border-bottom-left-radius: 10px;
+
+    box-shadow: 3px 3px 5px rgb(143, 171, 179);
+    display: flex;
+    justify-content: center;
+}
+
+header>a {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+}
+
+.main_logo {
+    width: 7rem;
+    /* background-color: blue; */
+    transition: 1s;
+    margin-right: 1rem;
+
+}
+
+.main_logo:hover {
+    transform: scale(1.1, 1.1);
+}
+label{
+    font-size: 1.5rem;
+}
+.menu {
+    background-color: rgba(167, 167, 167, 0.404);
+    border-radius: 10px;
+    position: fixed;
+    top:5%;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.menu>input{
+    border: none;
+    background-color: rgba(61, 61, 146, 0.568);
+    width: 40px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 2rem;
+    color:white;
+}
+.menu>input:hover{
+    
+    background-color: rgba(61, 61, 146, 0.795);
+}
+.add_adr {
+    display: none;
+    flex-direction: column;
+    padding: 1rem;
+}
+.adr_box3{
+    display: flex;
+    justify-content: end;
+}
+.adr_box3>input{
+    width: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(162, 224, 224, 0.692);
+}
+.adr_box3>input:hover{
+    background-color: rgba(120, 224, 224, 0.822);
+}
+.adr_box3>input:first-child{
+    margin-right: 1rem;
+}
+/* 메뉴 */
+
+/* ///////////////////////// */
+/* 메인부분 
+//////////////////////*/
+main {
+    margin: 13rem auto 1rem auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* 필수웹 */
+/* 필수+실무 h1 */
+.must_h1,
+.maybe_h1 {
+    margin: 3rem auto 0 auto;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    font-weight: 100;
+}
+
+/* 필수+실무 ul>a */
+.must_ul>a,
+.maybe_ul>a {}
+
+/* 필수+실무 ul */
+.must_ul,
+.maybe_ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid rgba(207, 109, 109, 0.5);
+    border-radius: 10px;
+
+}
+
+/* 필수+실무 li */
+.must_li,
+.maybe_li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 15rem;
+    font-size: 2rem;
+    color: rgb(43, 55, 59);
+    background-color: rgba(194, 194, 194, 0.3);
+    border-radius: 20px;
+    margin: 1rem;
+}
+
+/* 필수+실무 hover */
+.must_ul>a:hover,
+.maybe_ul>a:hover {
+    background-color: rgba(207, 109, 109, 0.5);
+}
+.adr_del_bt{
+    /* position: fixed; */
+    width: 30px;
+}
+.adr_del_bt:hover{
+    background-color: aqua;
+}
+@media (max-width : 1075px) {
+
+    /* 필수웹 */
+    /* 필수+실무 h1 */
+    .must_h1,
+    .maybe_h1 {
+        margin: 3rem auto 0 auto;
+        font-size: 3rem;
+        padding-bottom: 1rem;
+        font-weight: 100;
+    }
+
+    /* 필수+실무 ul */
+    .must_ul,
+    .maybe_ul {
+        width: 100%;
+        /* background-color: rgba(194, 194, 194, 0.2); */
+        display: flex;
+        /* justify-content: center; */
+        flex-wrap: wrap;
+        border: 3px solid rgba(207, 109, 109, 0.5);
+    }
+
+    /* 필수+실무 ul>a */
+    .must_ul>a,
+    .maybe_ul>a {
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* 필수+실무 li */
+    .must_li,
+    .maybe_li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20rem;
+        height: 20rem;
+        font-size: 2rem;
+        color: rgb(43, 55, 59);
+        background-color: rgba(194, 194, 194, 0.3);
+        margin: 1rem;
+    }
+}
+
+@media (max-width : 605px) {
+
+    /* 필수웹 */
+    /* 필수+실무 h1 */
+    .must_h1,
+    .maybe_h1 {
+        margin: 3rem auto 0 auto;
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+        font-weight: 200;
+    }
+
+    /* 필수+실무 ul */
+    .must_ul,
+    .maybe_ul {
+        width: 100%;
+        /* background-color: rgba(194, 194, 194, 0.2); */
+        display: flex;
+        /* justify-content: center; */
+        flex-wrap: wrap;
+        border: 3px solid rgba(207, 109, 109, 0.5);
+
+    }
+
+    /* 필수+실무 ul>a */
+    .must_ul>a,
+    .maybe_ul>a {
+        width: 49%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* 필수+실무 li */
+    .must_li,
+    .maybe_li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20rem;
+        height: 20rem;
+        font-size: 2rem;
+        color: rgb(43, 55, 59);
+        background-color: rgba(194, 194, 194, 0.3);
+        margin: 1rem;
+    }
+}

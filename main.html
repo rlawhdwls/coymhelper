@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/COYMLOGO_icon.ico">
+
+    <title>매장도우미</title>
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header>
+        <a href="main.html">
+            <img class="main_logo" src="img/LOGO 세로형.png" alt="초이스가발연구소 로고">
+            <h1>CHOICEWIGLAB<br> 도우미</h1>
+        </a>
+        
+        <div class="menu">
+            <input onclick="Add_menu()" type="button" value="=">
+            
+
+            <div class="add_adr">
+                <div class="adr_box1">
+                    <label for="site_id">사이트 이름</label>
+                    <textarea name="" id="adr_id" cols="30" rows="1"></textarea>    
+                </div>
+                <div class="adr_box2">
+                    <label for="site_url">사이트 주소</label>
+                    <textarea name="" id="adr_url" cols="30" rows="1"></textarea>    
+                </div>
+                <div class="adr_box3">
+                    <input onclick="Add_ok()" type="button" value="입력">
+                    <input onclick="Add_no()" type="button" value="취소">    
+                </div>
+            </div>
+        </div>
+        
+    </header>
+ 
+    
+    <!-- 메인 -->
+    <main>
+        <h1 class="must_h1">필수 웹사이트</h1>
+        <ul class="must_ul">
+            <a target="_blank" href="https://www2.handsos.com/work/default.asp">
+                <li class="must_li">HandSOS</li>
+            </a>
+            <a target="_blank" href="https://drive.google.com/drive/folders/1A23GiM-G_TjmVUA8K7boO_rMDQKwD75F">
+                <li class="must_li">구글드라이브</li>
+            </a>
+            <a target="_blank" href="https://mretailweb.tmapparking.co.kr/home">
+                <li class="must_li">T-map주차매니저</li>
+            </a>
+            <a target="_blank" href="https://blog.naver.com/tomoiie999">
+                <li class="must_li">네이버블로그</li>
+            </a>
+            <a target="_blank"
+                href="https://docs.google.com/document/d/1gRSV9zn7yl5UnHqY8emVvLgQ0yA_dXXVz0a57uAICUQ/edit">
+                <li class="must_li">할일</li>
+            </a>
+        </ul>
+
+        <h1 class="maybe_h1">실무 웹</h1>
+        <ul class="maybe_ul">
+            <a href="https://partner.alps.llogis.com/main/pages/sec/authentication">
+                <li class="maybe_li">롯데택배</li>
+            </a>
+            <a
+                href="https://www.coupang.com/?src=1042016&spec=10304903&addtag=900&ctag=HOME&lptag=%EC%BF%A0%ED%8C%A1&itime=20211023164723&pageType=HOME&pageValue=HOME&wPcid=83609496642911024374138&wRef=www.google.com&wTime=20211023164723&redirect=landing&gclid=CjwKCAjw5c6LBhBdEiwAP9ejGxuCK4ZxL3WuW7TlZnZx44TZP1bO0jG5m-JShf9LJG-YMPofFNe8HRoCGW8QAvD_BwE">
+                <li class="maybe_li">쿠팡</li>
+            </a>
+            <a href="https://www.youtube.com/">
+                <li class="maybe_li">Youtube</li>
+            </a>
+            <a href="
+            https://www.naver.com/">
+                <li class="maybe_li">네이버</li>
+            </a>
+        </ul>
+        &#215;
+    </main>
+
+    <!-- 푸터 -->
+    <style>
+        #tg_menu{
+            position: fixed;
+            top: 50%;
+            background-color: cadetblue;
+        }
+        #tg_menu{
+            width: 50px;
+            height: 30px;
+        }
+    </style>
+    <footer>
+        
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="js.js" defer></script>
+</body>
+
+</html>
